@@ -13,7 +13,7 @@ contract PensionDAOFactory {
   mapping(string => PensionDAO) public daos;
   string[] public activePensionSchemes; // New storage for active pension scheme names
 
-  uint256 constant public FIXED_DEPOSIT_AMOUNT = 10000000000000000; // 0.01 Matic
+  uint256 constant public FIXED_DEPOSIT_AMOUNT = 1000000000000000; 
 
   function createPensionDAO(string memory name) public {
     require(bytes(daos[name].name).length == 0, "DAO already exists");
